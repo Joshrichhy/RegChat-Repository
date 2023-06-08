@@ -1,0 +1,33 @@
+.registrationMainContainer{
+    background-color: white;
+    text-align: center;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    font-family: Roboto;
+    position: static;
+
+}
+.registrationContainer{
+    box-shadow: #282c34;
+    margin: auto;
+    height: 40rem;
+    width: 40rem;
+    background-color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#phonenumber{
+    margin-left: -35%;
+    font-size: small;
+}
+#username{
+    margin-left: -40%;
+    font-size: small;
+}
+#cpassword{
+    margin-left: -33%;
+    font-size: small;
+}

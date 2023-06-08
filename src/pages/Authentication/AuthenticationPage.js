@@ -1,30 +1,22 @@
 import React from "react";
-function authenticationPage(){
+import '../Authentication/styles/authentication.css'
+function AuthenticationPage(){
     return(
-        <div>
-            <div className= "registrationContainer">
-                <p>Regnos chat</p>
-                <form>
-                    <label><b>Phone Number</b></label>
-                    <input type={"number"} placeholder={"Enter first name"}/>
-
-                    <label><b>Username</b></label>
-                    <input placeholder={"Enter user name"}/>
-
-                    <label><b>Password</b></label>
-                    <input type={"password"} placeholder={"Enter password"}/>
-
-                    <label><b>confirm Password</b></label>
-                    <input type={"password"} placeholder={"confirm password"}/>
-
-
-                    <button type={"submit"}>Sign up</button>
-                </form>
-                <p>or continue with</p>
+        <div className="authenticationMainContainer">
+            <div id="circle"></div>
+            <div id="circle2"></div>
+            <div className= "authenticationContainer">
+                <h2>AUTHENTICATION</h2>
+                <p>A verification code has been sent to ******0197</p>
+                <p>Enter Verification Code</p>
+                <input placeholder={"Enter code"}/>
+                <br/>
+                <br/>
+                <button id="submit" type={"submit"}>verify</button>
             </div>
         </div>
 
     )
 }
 
-export default authenticationPage
+export default AuthenticationPage

@@ -1,0 +1,83 @@
+.loginMainContainer{
+    background-color: white;
+    text-align: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    font-family: Roboto;
+    position: static;
+
+
+}
+.loginContainer{
+    box-shadow: #282c34;
+    margin: auto;
+    height: 30rem;
+    width: 40rem;
+    background-color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+#submit{
+    background-color: #f14d11;
+    border: none;
+    color: antiquewhite;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 10px;
+
+}
+
+input{
+    width: 20rem;
+    box-shadow:  1px 3px grey;
+    border-radius: 10px;
+    height: 2rem;
+}
+
+#appname{
+    color: #f14d11;
+    font-size: larger;
+}
+
+#phoneNumber{
+
+    margin-left: -33%;
+    font-size: medium;
+}
+#password{
+    margin-left: -40%;
+    font-size: medium;
+
+}
+
+#alt{
+    font-size: medium;
+}
+
+#circle{
+    margin-right: 90%;
+    position: absolute;
+   border-bottom-right-radius: 100%;
+    background-color: #f14d11;
+    height: 15rem;
+    width: 15rem;
+}
+
+#circle2{
+    margin-left: 85%;
+    margin-top: 35%;
+    position: absolute;
+    border-top-left-radius: 100%;
+    background-color: #f14d11;
+    height: 15rem;
+    width: 15rem;
+}
+.altsignin img{
+    height: 1rem;
+    width: 2rem;
+
+}
+

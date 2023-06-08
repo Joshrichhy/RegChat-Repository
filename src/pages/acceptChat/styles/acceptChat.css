@@ -1,0 +1,116 @@
+.mainCont{
+    background-color: white;
+    text-align: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+    justify-content: center;
+    font-family: Roboto;
+
+}
+.chatMainCont{
+    display: flex;
+    margin: auto;
+    height: 40rem;
+    width: 80rem;
+    background-color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+#contacts{
+    background-color: white;
+    width: 25rem;
+    height: 38rem;
+
+
+
+}
+.topNav{
+    display: flex;
+    background-color: #e6e2e2;
+    border-radius: 5px;
+    width: 25rem;
+    gap: 50%;
+    height: 5rem;
+
+}
+
+.icons{
+    margin-top: 5%;
+    display: flex;
+    gap: 10%;
+    height: 2rem;
+
+}
+
+.allContacts{
+    border: solid 1px black;
+    height: 33rem;
+
+}
+.profilePicture{
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.eachContacts{
+    height: 5rem;
+    display: flex;
+    gap: 5%;
+    border: solid 1px black;
+}
+.selectedContact{
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    height: 6rem;
+    width: 54rem;
+
+}
+.chatArea{
+    width: 54rem;
+ background-color: antiquewhite;
+    height: 38rem;
+}
+.chatRequest{
+    background-color: #ffff;
+    width: 40rem;
+    height: 20rem;
+    margin-left: 15%;
+    margin-top: 8%;
+    box-shadow: 4px 5px gray ;
+
+}
+.accept{
+    background-color: #f14d11;
+    color: #e6e2e2;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 10px;
+
+}
+
+.reject{
+    background-color: red;
+    color: #e6e2e2;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+.arb{
+    width: 25rem;
+    height: 5rem;
+    gap: 15%;
+    display: flex;
+    margin-left: 30%;
+    margin-top: 3%;
+
+}
