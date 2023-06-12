@@ -1,8 +1,28 @@
-import React from "react";
+import React, {useState} from "react";
 import "../styles/Register.css"
 import facebook from "../../../assets/images/facebook.svg";
 import google from "../../../assets/images/google.svg";
+import {RegisterUser} from "../../../apiCalls/users";
 function RegisterPage(){
+    const [users, setUsers] = useState({
+        userName: "",
+        phoneNumber: "",
+        password: ""
+    })
+
+    const register = async () => {
+        try {
+            const response = await RegisterUser(users);
+            if (response.success){
+                alert(response.message)
+                console.log(users)
+            }else alert(response.message)
+        }
+        catch (error){
+            alert(error.message)
+        }
+    }
+
     return(
         <div className= "registrationMainContainer">
             <div id="circle"></div>
@@ -15,33 +35,36 @@ function RegisterPage(){
                     <label><b id="phonenumber">Phone Number</b></label>
                     <br/>
                     <br/>
-                    <input type={"number"} placeholder={"Enter phone number"}/>
+                    <input type="text"
+                           value={users.phoneNumber}
+                           onChange={(e) => setUsers({...users, phoneNumber: e.target.value})}
+                           placeholder={"Enter phone number"}/>
                     <br/>
                     <br/>
-
                     <label><b id="username">Username</b></label>
                     <br/>
                     <br/>
-                    <input placeholder={"Enter user name"}/>
+                    <input
+                        type="text"
+                        value={users.userName}
+                        onChange={(e) => setUsers({...users, userName: e.target.value})}
+                        placeholder={"Enter user name"}/>
                     <br/>
                     <br/>
 
                     <label><b id="password">Password</b></label>
                     <br/>
                     <br/>
-                    <input type={"password"} placeholder={"Enter password"}/>
+                    <input type="password"
+                           value={users.password}
+                           onChange={(e) => setUsers({...users, password: e.target.value})}
+                           placeholder={"Enter password"}/>
                     <br/>
                     <br/>
 
-                    <label>< b id="cpassword">confirm Password</b></label>
-                    <br/>
-                    <br/>
-                    <input type={"password"} placeholder={"confirm password"}/>
-                    <br/>
-                    <br/>
-
-
-                    <button id="submit" type={"submit"}>Sign up</button>
+                    <button id="submit"
+                            onClick={register}
+                            type={"submit"}>Sign up</button>
                     <br/>
                     <br/>
                 </form>
